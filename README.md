@@ -13,4 +13,7 @@ The code responsible for launching commands calls the `Runtime.getRuntime().exec
 As Minecraft initializes the mod the command is executed.
 ![image](https://github.com/nickswink/mc-payload-mod/assets/57839593/e1dfbc4d-068c-42e3-9e55-a6ed2e1635bf)
 
+### Beacon poc
+Executing a powershell paylaod to get a beacon on the remote host. (Seems to help with evasion as well)
+![image](https://github.com/nickswink/mc-payload-mod/assets/57839593/1cd888b5-855e-452e-80fa-c7aff1b891c5)
 
