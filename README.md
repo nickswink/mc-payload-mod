@@ -7,7 +7,10 @@ Replace this command to execute arbitrary commands on the system and drop second
 
 ### Code
 The code responsible for launching commands calls the `Runtime.getRuntime().exec()` function. 
-![alt-text](images/code.png)
+![image](https://github.com/nickswink/mc-payload-mod/assets/57839593/ce3c1902-74aa-4715-833b-aecf5354cb83)
 
 ### Execution
-[](https://i.imgur.com/lzX7git.png)
+As Minecraft initializes the mod the command is executed.
+![image](https://github.com/nickswink/mc-payload-mod/assets/57839593/e1dfbc4d-068c-42e3-9e55-a6ed2e1635bf)
+
+
