@@ -10,4 +10,4 @@ The code responsible for launching commands calls the `Runtime.getRuntime().exec
 ![alt-text](images/code.png)
 
 ### Execution
-[alt-text](https://i.imgur.com/lzX7git.png)
+!()[https://i.imgur.com/lzX7git.png]
