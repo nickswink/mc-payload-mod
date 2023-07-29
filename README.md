@@ -52,3 +52,38 @@ try {
 }
 
 ```
+
+### Manually load a malicious Dll
+| Maybe I will want to manually load (instead of sideloading) a malicious dll i've dropped
+
+```java
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+String libraryName = "your_dll_name_without_extension";
+try {
+    System.loadLibrary(libraryName);
+    System.out.println("DLL loaded successfully.");
+} catch (UnsatisfiedLinkError e) {
+    System.out.println("DLL not found. Loading from file...");
+    loadDllFromFile(libraryName);
+}
+
+private void loadDllFromFile(String libraryName) {
+    String dllPath = "path/to/your_mod_directory/lib/" + libraryName + ".dll";
+    if (Files.exists(Paths.get(dllPath))) {
+        try {
+            System.load(dllPath);
+            System.out.println("DLL loaded from file successfully.");
+        } catch (UnsatisfiedLinkError e) {
+            System.out.println("Failed to load DLL from file: " + e.getMessage());
+        }
+    } else {
+        System.out.println("DLL not found in the specified location: " + dllPath);
+    }
+}
+
+
+
+```
+
