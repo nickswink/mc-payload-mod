@@ -7,18 +7,21 @@ Replace this command to execute arbitrary commands on the system and drop second
 
 ### Code
 The code responsible for launching commands calls the `Runtime.getRuntime().exec()` function. 
-![image](https://github.com/nickswink/mc-payload-mod/assets/57839593/ce3c1902-74aa-4715-833b-aecf5354cb83)
+![256880772-ce3c1902-74aa-4715-833b-aecf5354cb83](https://github.com/nickswink/mc-payload-mod/assets/57839593/6fceec6d-020d-497a-92ce-4398b39e43db)
+
 
 ### Execution
 As Minecraft initializes the mod the command is executed.
-![image](https://github.com/nickswink/mc-payload-mod/assets/57839593/e1dfbc4d-068c-42e3-9e55-a6ed2e1635bf)
+![256880861-e1dfbc4d-068c-42e3-9e55-a6ed2e1635bf](https://github.com/nickswink/mc-payload-mod/assets/57839593/6b20fbbe-e7b4-40af-aa61-2b1027e72c02)
+
 
 ### Beacon poc
 Executing a powershell paylaod to get a beacon on the remote host. (Seems to help with evasion as well)
-![image](https://github.com/nickswink/mc-payload-mod/assets/57839593/1cd888b5-855e-452e-80fa-c7aff1b891c5)
+![256903518-1cd888b5-855e-452e-80fa-c7aff1b891c5](https://github.com/nickswink/mc-payload-mod/assets/57839593/ff959f26-76a0-4d2c-a75f-816862d5a906)
+
 
 ### DOwnloads (dll sideloading)
-| Maybe if you want to drop a file without running `Runtime.getRuntime().exec()` which is kinda sketchy. 
+| Maybe if you want to drop a file without running `Runtime.getRuntime().exec()` which is kinda sketchy anyway. 
 
 ```java
 import java.io.BufferedInputStream;
